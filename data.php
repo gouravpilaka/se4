@@ -17,20 +17,19 @@ function get_price($name, $price)
 	$row = $stmt->fetch();
 	$p = $row["price"];
         echo $p;
+	echo $stmt;
+	echo $row;
 	
-
-	$conn = NULL;
-	
-  if ($p == $price) 
+	if ($p == $price) 
 	  {
-  		  return "true";
- 	 }
-  else 
+  		  return "true"; }
+  	else 
  	{
   		return "false";
 	}
 	
 }
+$conn = NULL;
 
 ?>
 
