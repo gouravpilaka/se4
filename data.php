@@ -12,6 +12,12 @@ function get_price($name, $price)
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
  $sql = ("SELECT price FROM product WHERE product = '$name'");
+$sql_run = $conn->query($sql);
+$exe = $sql_run->rowCount();
+echo $exe ;
+	
+	
+	
 $result = $conn->query($sql);
 $result->execute();
 $row = $result->fetch();
