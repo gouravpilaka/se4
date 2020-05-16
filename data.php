@@ -38,7 +38,7 @@ if ($p == $price)
 else 
  {
 	echo $p;
-	echo $price;
+	
   return "false";
 
  }
