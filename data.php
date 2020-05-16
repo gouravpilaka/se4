@@ -38,6 +38,8 @@ if ($p == $price)
 else 
  {
   return "false";
+	echo $p;
+	echo $price;
 
  }
 
