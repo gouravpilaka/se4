@@ -21,14 +21,14 @@ function get_price($name, $price)
 	
 	if ($price == $p) 
 	  {
-  		  $r = true; }
+  		  $ty = true; }
   	else 
  	{	
 		echo $p;
-  		$r = false;
+  		$ty = false;
 	}
 $conn = NULL;	
-	return $r;
+	return $ty;
 }
 
 
