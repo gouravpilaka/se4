@@ -15,11 +15,11 @@ function get_price($name, $price)
 $result = $conn->query($sql);
 $row = $result->fetch();
 $p = $row["price"];
-if ($p == $price) 
+if (!$row) 
 	 	 {
  	 	  return "true";
 	   	 }
-	else 
+else 
  	{
 	echo $price;
 	echo $p;
