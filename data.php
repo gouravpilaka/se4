@@ -13,7 +13,7 @@ function get_price($name, $price)
 
  $sql = ("SELECT price FROM product WHERE product = '$name'");
 $result = $conn->query($sql);
-$resul->execute();
+$result->execute();
 $row = $result->fetch();
 $p = $row["price"];
 if (!$row) 
