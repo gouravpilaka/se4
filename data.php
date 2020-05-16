@@ -15,22 +15,14 @@ function get_price($name, $price)
 $sql_run = $conn->query($sql);
 $exe = $sql_run->rowCount();
 echo "<h1> $exe </h1>" ;
-	
-	
-	
-$result = $conn->query($sql);
-$result->execute();
-$row = $result->fetch();
-$p = $row["price"];
-if (!$row) 
-	 	 {
- 	 	  return "true";
-	   	 }
-else 
- 	{
-	echo $price;
-	echo $p;
-	return "false";
+
+if ($exe == 0)
+{
+	return false;
+}
+	else
+	{
+		return true;
 	}
   $conn = NULL;
 }
