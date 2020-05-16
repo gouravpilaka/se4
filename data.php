@@ -13,19 +13,20 @@ function get_price($name, $price)
 
  $sql = ("SELECT price FROM product WHERE product = '$name'");
 $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) 
+$row = $result->fetch();
+        if (!$row) 
 	{
 
-             while($row = $result->fetch_assoc()) 
-	 	 {
-                      $p = $row["price"];
-      	  	}
+              $p = null;
+		     return "y";
     	}
 	 else
 		 {
-                     $p = null;
-		     return "y";	
+                   	
+		 while($row = $result->fetch_assoc()) 
+	 	 {
+                      $p = $row["price"];
+      	  	}
         	}
 
   $conn = NULL;
