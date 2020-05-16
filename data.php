@@ -14,7 +14,7 @@ function get_price($name, $price)
  $sql = ("SELECT price FROM product WHERE product = '$name'");
 $sql_run = $conn->query($sql);
 $exe = $sql_run->rowCount();
-echo $exe ;
+echo "<h1> $exe </h1>" ;
 	
 	
 	
