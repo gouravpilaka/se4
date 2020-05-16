@@ -17,8 +17,7 @@ function get_price($name, $price)
 	$row = $stmt->fetch();
 	$p = $row["price"];
         echo $p;
-	echo $stmt;
-	echo $row;
+	echo $price;
 	
 	if ($p == $price) 
 	  {
