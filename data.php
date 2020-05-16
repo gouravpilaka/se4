@@ -18,12 +18,12 @@ $row = $result->fetch();
 	{
 
               $p = null;
-		     return "y";
+	      return "y";
     	}
 	 else
 		 {
                    	
-		 while($row = $result->fetch_assoc()) 
+		 while($row = $result->fetch()) 
 	 	 {
                       $p = $row["price"];
       	  	}
