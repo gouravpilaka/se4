@@ -19,7 +19,7 @@ function get_price($name, $price)
         echo $p;
 	echo $price;
 	
-	if ($p==$price) 
+	if ($price == $p) 
 	  {
   		  return "true"; }
   	else 
