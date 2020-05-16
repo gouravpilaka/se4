@@ -21,16 +21,16 @@ function get_price($name, $price)
 	
 	if ($price == $p) 
 	  {
-  		  return "true"; }
+  		  $r = true; }
   	else 
  	{	
 		echo $p;
-  		return "false";
+  		$r = false;
 	}
-	
+$conn = NULL;	
 }
-$conn = NULL;
 
+return $r;
 ?>
 
 
