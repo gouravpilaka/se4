@@ -17,7 +17,7 @@ if(!empty($_GET['name']) and !empty($_GET['price']))
 	
 	if(empty($r))
 	{
-		response(200,"Product Not Found",NULL);
+		response(200,"Product Found",false);
 	}
 	else
 	{
