@@ -28,9 +28,10 @@ function get_price($name, $price)
   		$r = false;
 	}
 $conn = NULL;	
+	return $r;
 }
 
-return $r;
+
 ?>
 
 
