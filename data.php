@@ -17,11 +17,12 @@ $exe = $sql_run->rowCount();
 echo "<h1> $exe </h1>" ;
 
 if ($exe == 0)
- return false;
+ $y = "false";
 else
     {
     return true;
 	}
+	return $y;
   $conn = NULL;
 }
 
