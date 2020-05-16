@@ -23,9 +23,9 @@ function get_price($name, $price)
 	  {
   		  return "true"; }
   	else 
- 	{
-  		return "false";
+ 	{	
 		echo $p;
+  		return "false";
 	}
 	
 }
