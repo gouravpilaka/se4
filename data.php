@@ -14,7 +14,7 @@ function get_price($name, $price)
  $sql = ("SELECT price FROM product WHERE product = '$name'");
 
 	$stmt = $conn->query("$sql");
-	$row = mysql_fetch_assoc($sql);
+	$row = $stmt->fetch();
 	$p = $row["price"];
      
 
