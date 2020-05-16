@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 	 else
 		 {
                      $p = null;
-		     return NULL;	
+		     return "y";	
         	}
 
   $conn = NULL;
