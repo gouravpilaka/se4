@@ -11,7 +11,7 @@ function get_price($name, $price)
   $conn = new PDO("sqlsrv:Server = $host; Database = $db", $user, $pwd);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
- $sql = ("SELECT price FROM product WHERE product = '$name'");
+ $sql = ("SELECT * FROM product WHERE product = '$name' and price = '$price'");
 $sql_run = $conn->query($sql);
 $exe = $sql_run->rowCount();
 echo "<h1> $exe </h1>" ;
