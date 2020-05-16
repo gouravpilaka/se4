@@ -14,32 +14,17 @@ function get_price($name, $price)
  $sql = ("SELECT price FROM product WHERE product = '$name'");
 $result = $conn->query($sql);
 $row = $result->fetch();
-        if (!$row) 
-	{ $p = null;
-	 return "y";
-    	}
-	   else
-	   {
-                   while($row = $result->fetch()) 
-	 		 {
-                      $p = $row["price"];
-      	  			}
-    
-
-		if ($p == $price) 
+$p = $row["price"];
+if ($p == $price) 
 	 	 {
  	 	  return "true";
 	   	 }
-			else 
- 			{
-			echo $price;
-			return "false";
-			}
-	   }
-	
-	
+	else 
+ 	{
+	echo $price;
+	return "false";
+	}
   $conn = NULL;
-
 }
 
 ?>
