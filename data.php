@@ -21,12 +21,9 @@ function get_price($name, $price)
 	
 	if ($price == $p) 
 	  {
-  		 return "true"; }
-  	else 
- 	{	
-		echo $p;
-  		return "false";
+  		 return "true";
 	}
+  	
 $conn = NULL;	
 	
 }
