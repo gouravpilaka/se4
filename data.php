@@ -22,6 +22,7 @@ if ($p == $price)
 	else 
  	{
 	echo $price;
+	echo $p;
 	return "false";
 	}
   $conn = NULL;
