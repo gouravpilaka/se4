@@ -12,23 +12,23 @@ function get_price($name, $price)
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
  $sql = ("SELECT price FROM product WHERE product = '$name'");
-  $result = $conn->query("$sql");
 
-  $row = $result->fetch();
-   $p = $row["price"];
+	$stmt = $conn->query("$sql");
+	$row = mysql_fetch_assoc($sql);
+	$p = $row["price"];
      
 
 	$conn = NULL;
 	
   if ($p == $price) 
-  {
-    return "true";
-  }
-else 
- {
-  return "false";
-
- }
+	  {
+  		  return "true";
+ 	 }
+  else 
+ 	{
+  		return "false";
+	}
+	
 }
 
 ?>
