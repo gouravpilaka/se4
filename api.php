@@ -3,8 +3,7 @@
 header("Content-Type:application");
 require "data.php";
 
-echo '<html>Products:chilli, rub ,clove, cajun, garlic & turmeric<form> Product Name: <input type="text" name="name"></br>
-Product Price: <input type="text" name="price"> <input type="submit"> </form></html>';
+
 
 
 
